@@ -1,0 +1,255 @@
+section{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+/* making banner section relative to position the texts in corner as absolute */
+#banner-section{
+    position: relative;
+}
+
+/* making the texts absolute to the relative container to make them sit in corner */
+#banner-text{
+    position: absolute;
+    top: 33%;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+#banner-text h1{
+    text-transform: capitalize;
+    font-size: 3vw;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+
+}
+
+/* making the subtext look like logo's subtext by changing the font family */
+#banner-text h4{
+    color: white;
+    font-weight: 100;
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.flex-container {
+    align-items: center;
+    justify-content: center;
+    display: flex; /*making display flex for responsiveness management*/
+    flex-wrap: wrap;   
+}
+
+.flex-content {
+    margin: .5rem;
+    flex: 0 0 33%;
+    max-width: 24rem;
+}
+
+.item {
+    position: relative;
+}
+
+/* making the cursor look like link and giving a little opacity for the hover effect */
+.item:hover .overlay {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.text {
+    color: var(--primary-silver);
+    position: absolute;
+    /* making the text center. using percentage as it is absolute */
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.product-image{
+    border-radius: 5px;
+}
+.product-container{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 2%;
+    background-color: var(--secondary-silver);
+    cursor: pointer;
+}
+
+.product-container h3 {
+    color: black;
+}
+
+.product-link{
+    font-weight: bold;
+}
+.product-container:hover{
+    background-color: var(--primary-silver);
+}
+/* topright class for the names to set at corner when in tab and mobile mode. as hover don't work there */
+.topright {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-purple);
+    padding: 10px;
+    opacity: 0.8;
+    visibility: hidden;
+}
+.product-description{
+    text-align: left;
+    padding: 0px 2px;
+}
+.product-price{
+    float: right;
+    color: var(--primary-purple);
+}
+#partner {
+    margin-top: 2rem;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+#partner h1 {
+    color: black;
+}
+
+.partner-logo{
+    max-width: 15rem;
+    display: inline;
+    padding: 20px;
+}
+#partner-logo-container{
+    text-align: center;
+}
+article{
+    margin: 2em;
+    font-size: 150%;
+    text-align: center;
+}
+article a{
+    text-transform: capitalize;
+    color: var(--primary-purple);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.talents {
+    padding: 3% 2%;
+    width: 72%;
+    margin: 0 auto;
+    background-color: #29184a;
+    border-radius: 25px;
+    color: white;
+}
+
+.talents img {
+    height: 26vh;
+    width: auto;
+}
+
+.talents > div {
+    width: 50%;
+    padding-left: 2%;
+}
+
+.subscription {
+    width: 80%;
+    margin: 0 auto;
+    color: black;
+}
+
+.subscription h1 {
+    color: black;
+    font-size: 2rem;
+}
+
+.subscription .heading {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.subscription .flex-container {
+    margin: 3% 0;
+}
+
+.subscription .flex-content {
+    flex: 0 0 25%;
+    padding: 2% 3%;
+    border-radius: 15px;
+}
+
+.subscription .active {
+    background-color: blue;
+    color: white;
+}
+
+.subscription .active:hover {
+    background-color: darkblue;
+}
+
+.subscription .active h1 {
+    color: white;
+}
+
+.sub-btn {
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.sub-btn .secondary-btn {
+    color: blue;
+    border: none;
+}
+
+@media screen and (min-width: 769px) {
+    /* making the article have more margin in desktop mode */
+    article{
+        margin: 4em;
+    }
+}
+@media (min-width: 0) and (max-width: 480px) {
+    /* making the flex items in column mode for mobile screen */
+    #banner-section{
+        margin-top: 0px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .flex-content{
+        /* flex grow 0, flex shrink 0 and flex basis 50%, making the flex items each taking 50% for tab mode */
+        flex: 0 0 50%; 
+    }
+}
+@media only screen and (max-width: 768px) {
+    /* hiding the overlay affects as hover won't work in tab and mobile mode, and making the top right corner area visible  */
+    .topright{
+        visibility: visible;
+    }
+    .overlay{
+        visibility: hidden;
+    }
+}
+
+
+  
