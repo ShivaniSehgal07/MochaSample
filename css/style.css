@@ -133,10 +133,9 @@ main{
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: var(--body-background);
     z-index: 1;
     visibility: hidden;
-    background-color: var(--primary-purple);
+    background-color: navy;
 }
 
 #mobile-nav a {
@@ -175,6 +174,11 @@ footer h2 {
 }
 
 @media (min-width: 0) and (max-width: 480px) {
+    #logo {
+        width: 18%;
+        height: auto;
+    }
+
     #navbar {
         flex-direction: column;
     }
@@ -189,6 +193,6 @@ footer h2 {
     }
 
     footer {
-        padding-bottom:2rem;
+        padding-bottom: 2rem;
     }
 }

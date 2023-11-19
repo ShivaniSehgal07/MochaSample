@@ -226,13 +226,60 @@ article a{
 }
 @media (min-width: 0) and (max-width: 480px) {
     /* making the flex items in column mode for mobile screen */
+    #banner-text {
+        position: absolute;
+        top: 25%;
+        left: 11%;
+        width: 78%;
+        text-align: center;
+    }
+
+    #banner-text h1 {
+        font-size: 1rem;
+    }
+
+    #banner-text h4 {
+        font-size: 0.4rem;
+    }
+
     #banner-section{
         margin-top: 0px;
     }
+
+    #logo-wrapper {
+        position: absolute;
+        top: 0;
+    }
+
     .flex-container {
         flex-direction: column;
     }
+
+    .subscription .flex-content, .subscription .heading, .services .product-container {
+        width: 80%;
+    }
+
+    .services .product-container {
+        padding: 2% 4% 4% 4%;
+    }
     
+    .talents {
+        padding: 7% 2%;
+    }
+
+    .talents img {
+        height: 20vh;
+    }
+
+    .talents > div {
+        width: 84%;
+    }
+
+    footer #banner-text {
+        top: 9%;
+        left: 8%;
+        width: 85%;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
