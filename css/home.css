@@ -228,7 +228,7 @@ article a{
     /* making the flex items in column mode for mobile screen */
     #banner-text {
         position: absolute;
-        top: 25%;
+        top: 30%;
         left: 11%;
         width: 78%;
         text-align: center;
