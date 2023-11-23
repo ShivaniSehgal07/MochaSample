@@ -28,6 +28,10 @@ main{
     padding: 5% 0;
 }
 
+.txt-aln-cntr {
+    text-align: center;
+}
+
 .txt-aln-lt {
     text-align: left;
 }
@@ -64,7 +68,7 @@ main{
     align-items: center;
     font-weight: bold; 
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .flex-item{
@@ -159,6 +163,11 @@ main{
 }
 
 footer h2 {
+    color: white;
+}
+
+.footer {
+    background-color: #220032;
     color: white;
 }
 

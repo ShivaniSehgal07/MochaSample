@@ -149,13 +149,21 @@ article a{
     text-decoration: none;
 }
 
+.talents-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: unset;
+    justify-content: space-between;
+}
+
 .talents {
     padding: 3% 2%;
-    width: 72%;
+    width: 44%;
     margin: 0 auto;
     background-color: #29184a;
     border-radius: 25px;
     color: white;
+    margin-bottom: 2%;
 }
 
 .talents img {
@@ -164,7 +172,7 @@ article a{
 }
 
 .talents > div {
-    width: 50%;
+    width: 60%;
     padding-left: 2%;
 }
 
@@ -272,6 +280,7 @@ article a{
     
     .talents {
         padding: 7% 2%;
+        width: 100%;
     }
 
     .talents img {
